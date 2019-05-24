@@ -17,7 +17,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     function hideURLbar() {
       window.scrollTo(0, 1);
     }
+    
   </script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  <script type="text/javascript" src="js.js"></script>
   <!--//meta tags ends here-->
   <!--booststrap-->
   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
@@ -28,8 +32,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   <!--stylesheets-->
   <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
   <!--//stylesheets-->
+  
   <link href="//fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
   <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <!--
+// Add the new slick-theme.css if you want the default styling//-->
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="css/slick.css">
+
+<style>
+  
+
+  .slick
+  {
+    width:100%x;
+    margin: 0 auto;
+  }
+  .imgs{
+  text-align: center;
+  margin: 0 auto;
+  height: auto;
+  max-width: 100%;
+  }
+</style>
 </head>
 
 <body>
@@ -68,6 +94,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
     <!-- //header -->
     <!-- banner -->
+   
     <div class="main-banner">
       <div class="container-fluid">
         <div class="style-banner ">
@@ -76,33 +103,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               <div class="social-icons">
                 <ul>
                   <li>
-                    <a href="#">
+                    <a href="https://www.facebook.com/ashley.lan.3323">
                       <span class="fa fa-facebook mr-lg-3"></span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="https://twitter.com/lovemom85928">
                       <span class="fa fa-twitter mr-lg-3"></span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="mailto:ksvcs17243@gmail.com">
                       <span class="fa fa-rss mr-lg-3"></span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="mailto:ksvcs17243@gmail.com">
                       <span class="fa fa-envelope mr-lg-3"></span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="https://www.instagram.com/ashley__928/">
                       <span class="fa fa-instagram mr-lg-3"></span>
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
+            
             <div class="col-lg-8 col-md-8 col-sm-9">
               <div class="banner-right-txt">
                 <h4><span style="background-color:#666666	">Live well, love lots,</span></h4>
@@ -136,6 +164,76 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       </div>
     </section>
     
+   <div>
+     <ul class="slick">
+        <li><img class="imgs" src="images/CF9E41B7-A6DD-497D-8C9A-9D335AEF7756.jpg" alt=""></li>
+       <li><img class="imgs" src="images/S__10928146.jpg" alt=""></li>
+       <li><img class="imgs" src="images/S__10928145.jpg" alt=""></li>
+       <li><img class="imgs" src="images/S__10928130.jpg" alt=""></li>
+       <li><img class="imgs" src="images/S__10928133.jpg" alt=""></li>
+       
+     </ul>
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <script>
+    $(function(){
+    $('.slick').slick({
+      dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000, 
+        responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+      });
+      
+    });
+    </script>
+    <!--<script>
+      $('.single-item').slick({
+    Autoplay:true,
+    dots: false,
+   
+    infinite: true,
+    speed: 0.1,
+    slidesToShow: 1,
+    adaptiveHeight: true
+  });
+
+
+
+    </script>
+	-->
+   </div>
+
   <!-- //about -->
   <!-- counter-reset -->
   <section class="counter-reset">
@@ -200,12 +298,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <div class="footer-icons pt-lg-5 pt-md-4 mt-3">
             <ul>
               <li>
-                <a href="#">
+                <a href="https://www.facebook.com/ashley.lan.3323">
                   <span class="fa fa-facebook mr-lg-3 mr-2"></span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://twitter.com/lovemom85928">
                   <span class="fa fa-twitter mr-lg-3 mr-2"></span>
                 </a>
               </li>
@@ -215,12 +313,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="mailto:ksvcs17243@gmail.com">
                   <span class="fa fa-envelope mr-lg-3 mr-2"></span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://www.instagram.com/ashley__928/">
                   <span class="fa fa-instagram mr-lg-3 mr-2"></span>
                 </a>
               </li>
