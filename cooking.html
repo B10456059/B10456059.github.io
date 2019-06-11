@@ -35,6 +35,27 @@
   <!--//stylesheets-->
   <link href="//fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
   <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="css/slick.css">
+<style>
+  
+
+  .slick
+  {
+    width:100%x;
+    margin: auto;
+  }
+  .imgs{
+  text-align: center;
+  margin: auto;
+  height: auto;
+  max-width: 100%;
+  
+  width: 50%;
+  height: 20%;
+ 
+    }
+</style>
 </head>
 
 <body>
@@ -179,6 +200,66 @@
       </div>
     </div>
   </section>
+  <div class="about-para-txt text-center">
+    <h3 class="title mb-md-4 mb-sm-3 mb-3">Before I ATE&COOKED </h3>
+  </div>
+<div>
+  <ul class="slick">
+     
+    <li><img class="imgs" src="images/7AF1787B-2269-4D92-8494-207730375B0A.jpg" class="img-fluid"></li>
+    <li><img class="imgs" src="images/69CC3E35-2870-449A-8E21-E07329BFD009.jpg" class="img-fluid"></li>
+    <li><img class="imgs" src="images/03A25050-5490-48E4-A210-229ACDC6B79D.jpg" class="img-fluid"></li>
+    <li><img class="imgs" src="images/014D74E4-C477-4997-A295-88CF169B8891.jpg" class="img-fluid"></li>
+    <li><img class="imgs" src="images/B69C85A6-7485-4450-B28F-A0794406B7A5.jpg" class="img-fluid"></li>
+    <li><img class="imgs" src="images/D13D9211-7409-4731-A93F-008DB72D865F.jpg" class="img-fluid"></li>
+    
+    
+  </ul>
+
+ <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+ <script type="text/javascript" src="js/slick.js"></script>
+ <script type="text/javascript" src="js/slick.min.js"></script>
+
+ <script>
+ $(function(){
+ $('.slick').slick({
+   dots: true,
+     infinite: false,
+     speed: 300,
+     slidesToShow: 1,
+     slidesToScroll: 1,
+     autoplay: true,
+     autoplaySpeed: 2000, 
+     responsive: [
+     {
+       breakpoint: 1024,
+       settings: {
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         infinite: true,
+         dots: true
+       }
+     },
+     {
+       breakpoint: 600,
+       settings: {
+         slidesToShow: 1,
+         slidesToScroll: 1
+       }
+     },
+     {
+       breakpoint: 480,
+       settings: {
+         slidesToShow: 1,
+         slidesToScroll: 1
+       }
+     }
+   ]
+   });
+   
+ });
+ 
+ </script>
   <!-- //clients -->
   <!-- footer -->
   <footer class="py-lg-3 py-md-2 py-sm-3 py-2">

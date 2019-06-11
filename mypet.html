@@ -22,6 +22,7 @@
     function hideURLbar() {
       window.scrollTo(0, 1);
     }
+    
   </script>
   <!--//meta tags ends here-->
   <!--booststrap-->
@@ -35,6 +36,27 @@
   <!--//stylesheets-->
   <link href="//fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
   <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <style>
+  
+
+    .slick
+    {
+      width:100%x;
+      margin: auto;
+    }
+    .imgs{
+    text-align: center;
+    margin: auto;
+    height: auto;
+    max-width: 100%;
+    
+    width: 80%;
+    height: 50%;
+   
+      }
+  </style>
 </head>
 
 <body>
@@ -111,6 +133,7 @@
     </div>
   </section>
   <!-- //about -->
+
   <!-- counter-reset -->
   <section class="counter-reset">
     <div class="container-fluid">
@@ -127,6 +150,95 @@
       </div>
     </div>
   </section>
+  
+  
+
+<section class="about py-lg-4 py-md-3 py-sm-3 py-3">
+  <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 about-imgs-txt">
+        <img src="images/S__11206659.jpg" class="img-fluid">
+      </div>
+      <div class="col-lg-6 col-md-6 text-left about-two-grids">
+        <img src="images/S__11206660.jpg" class="img-fluid">
+          
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div>
+  <ul class="slick">
+     
+    <li><img class="imgs" src="images/62495FDF-9DEC-48A0-AA8A-2AC1D84C32AC.jpg" class="img-fluid"></li>
+    <li><img class="imgs" src="images/84F500DC-F0D5-4909-9CE0-C9C58268FA3B.jpg" class="img-fluid"></li>
+    <li><img class="imgs" src="images/7DDBE560-C706-43EF-8BF6-85FB43BD448E.jpg" class="img-fluid"></li>
+    <li><img class="imgs" src="images/15A71B01-5945-4007-B5F2-AB0267744CA0.jpg" class="img-fluid"></li>
+    
+  </ul>
+
+ <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+ <script type="text/javascript" src="js/slick.js"></script>
+ <script type="text/javascript" src="js/slick.min.js"></script>
+
+ <script>
+ $(function(){
+ $('.slick').slick({
+   dots: true,
+     infinite: false,
+     speed: 300,
+     slidesToShow: 1,
+     slidesToScroll: 1,
+     autoplay: true,
+     autoplaySpeed: 2000, 
+     responsive: [
+     {
+       breakpoint: 1024,
+       settings: {
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         infinite: true,
+         dots: true
+       }
+     },
+     {
+       breakpoint: 600,
+       settings: {
+         slidesToShow: 1,
+         slidesToScroll: 1
+       }
+     },
+     {
+       breakpoint: 480,
+       settings: {
+         slidesToShow: 1,
+         slidesToScroll: 1
+       }
+     }
+   ]
+   });
+   
+ });
+ 
+ </script>
+ <!--<script>
+   $('.single-item').slick({
+ Autoplay:true,
+ dots: false,
+
+ infinite: true,
+ speed: 0.1,
+ slidesToShow: 1,
+ adaptiveHeight: true
+});
+
+
+
+ </script>
+-->
+</div>
   <!--//counter-reset -->
 
   <!-- //clients -->
